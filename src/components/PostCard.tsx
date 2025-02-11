@@ -11,7 +11,7 @@ import { DeleteAlertDialog } from "./DeleteAlertDialog";
 import { Button } from "./ui/button";
 import { HeartIcon, LogInIcon, MessageCircleIcon, SendIcon } from "lucide-react";
 import { Textarea } from "./ui/textarea";
-import { getPosts, toggleLike } from "@/action/post.action";
+import { createComment, deletePost, getPosts, toggleLike } from "@/action/post.action";
 
 type Posts = Awaited<ReturnType<typeof getPosts>>
 type Post = Posts[number]
